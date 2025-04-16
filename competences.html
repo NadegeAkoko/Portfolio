@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compétences | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fef6f9, #f0f4ff);
+      color: #333;
+      padding: 0;
+    }
+
+    header {
+      background: #000;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 25px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #fcd34d;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: #4b2e83;
+    }
+
+    .skills-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .skill-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+      position: relative;
+      flex: 1 1 22%; /* Augmenté la largeur des cartes */
+      max-width: 300px; /* Limite la largeur des cartes */
+    }
+
+    .skill-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .skill-card i {
+      font-size: 28px;
+      color: #fcd34d;
+      position: absolute;
+      top: 20px;
+      right: 25px;
+    }
+
+    .skill-card h3 {
+      font-size: 22px;
+      color: #4b2e83;
+      margin-bottom: 5px;
+    }
+
+    .skill-card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skill-card ul li {
+      margin-bottom: 10px;
+      font-size: 15px;
+      color: #444;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .skill-card ul li::before {
+      content: "✔";
+      color: #000;
+      position: absolute;
+      left: 0;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="acceuil.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="experiences.html">Expériences</a>
+      <a href="projets.html">Projets</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Mes Compétences</h1>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <i class="fas fa-cogs"></i>
+        <h3>Compétences Techniques</h3>
+        <ul>
+          <li>Python (Scikit-learn, Pandas, NumPy)</li>
+          <li>SQL (création de bases de données, requêtes avancées)</li>
+          <li>Machine Learning (modèles ARIMA, Random Forest)</li>
+          <li>Data Visualization (Power BI, Tableau)</li>
+          <li>Web Scraping (BeautifulSoup, Requests)</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Compétences Analytiques</h3>
+        <ul>
+          <li>Analyse des tendances (séries temporelles, prévisions)</li>
+          <li>Analyse de données financières</li>
+          <li>Analyse de la qualité des données</li>
+          <li>Modélisation statistique</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-users"></i>
+        <h3>Compétences Organisationnelles</h3>
+        <ul>
+          <li>Gestion de projets (méthodologies Scrum)</li>
+          <li>Collaboration interdisciplinaire</li>
+          <li>Adaptabilité et résolution de problèmes</li>
+          <li>Communication claire et efficace</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <i class="fas fa-language"></i>
+        <h3>Compétences Linguistiques</h3>
+        <ul>
+          <li>Français (langue maternelle)</li>
+          <li>Anglais (niveau professionnel)</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Mon Portfolio — nado161997@gmail.com</p>
+  </footer>
+
+</body>
+</html>

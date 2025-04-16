@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expériences | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fef6f9, #f0f4ff);
+      color: #333;
+      padding: 0;
+    }
+
+    header {
+      background: #2d2426;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 25px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #fcd34d;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: #4b2e83;
+    }
+
+    
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px;
+    }
+
+    .experience-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .experience-card i {
+      font-size: 28px;
+      color: #fcd34d;
+      position: absolute;
+      top: 20px;
+      right: 25px;
+    }
+
+    .experience-card h3 {
+      font-size: 22px;
+      color: #4b2e83;
+      margin-bottom: 5px;
+    }
+
+    .experience-card p.date {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .experience-card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .experience-card ul li {
+      margin-bottom: 10px;
+      font-size: 15px;
+      color: #444;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .experience-card ul li::before {
+      content: "✔";
+      color: #4b2e83;
+      position: absolute;
+      left: 0;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="acceuil.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="experiences.html">Expériences</a>
+      <a href="projets.html">Projets</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Mes Expériences Professionnelles</h1>
+    <div class="experience-grid">
+
+      <div class="experience-card">
+        <i class="fas fa-database"></i>
+        <h3>Data Analyst (Stage)</h3>
+        <p class="date">Mars 2023 - Août 2023 | EURATECH</p>
+        <ul>
+          <li>Collecte, nettoyage et analyse de données</li>
+          <li>Exploration des corrélations et anomalies</li>
+          <li>Utilisation de Python, Matplotlib, NumPy, Pandas, SQL</li>
+          <li>Création d’indicateurs clés de performance (KPI)</li>
+          <li>Collaboration étroite avec l’équipe Data</li>
+        </ul>
+      </div>
+
+      <div class="experience-card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Développement Front-End (Stage)</h3>
+        <p class="date">Janvier 2024 - Juin 2024 | EURATECH</p>
+        <ul>
+          <li>Création de maquettes UI</li>
+          <li>Intégration d’interfaces avec frameworks</li>
+          <li>Soutien technique à l'équipe informatique</li>
+          <li>Participation aux tests et rédaction de documentation</li>
+        </ul>
+      </div>
+
+      <div class="experience-card">
+        <i class="fas fa-network-wired"></i>
+        <h3>Informaticienne Réseaux</h3>
+        <p class="date">Septembre 2020 - Août 2021 | MEDIASOFT - Togo</p>
+        <ul>
+          <li>Gestion du parc informatique</li>
+          <li>Protection des données et assistance aux utilisateurs</li>
+          <li>Mise en place d’un système de contrôle d’accès</li>
+          <li>Administration d’une base de données</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Mon Portfolio — nado161997@gmail.com</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expériences Professionnelles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fef6f9, #f0f4ff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2d2426;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        header nav a:hover {
+            color: #fcd34d;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #4b2e83;
+         }
+
+        .experience-title {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #4b2e83;
+        }
+        .experience-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 900px;
+        }
+        .experience-item h3 {
+            font-size: 28px;
+            color: #4b2e83;
+            margin-bottom: 10px;
+        }
+        .experience-item p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .experience-item .date {
+            font-style: italic;
+            color: #777;
+        }
+        footer {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="acceuil.html">Accueil</a>
+            <a href="competences.html">Compétences</a>
+            <a href="experiences.html">Expériences</a>
+            <a href="projets.html">Projets</a>            
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="experience-title">Mes Projets d'Etude </h1>
+
+        <!-- Expérience 1 -->
+        <div class="experience-item">
+            <h3>Visualisation en temps réel des stations de vélos</h3>
+            <p><strong>🎯 Objectif du projet : </strong> Visualisation en temps réel des stations de vélos</p>
+            <p>L’objectif de ce projet était de concevoir une application web permettant de visualiser en temps réel les informations des stations de vélos en libre-service dans plusieurs villes. Les utilisateurs peuvent consulter la disponibilité des vélos et des places dans les stations via une carte interactive.</p>
+            <ul>
+                <li>Récupération des données des stations de vélos via une API REST publique.</li>
+                <li>Stockage et gestion des données dans une base de données MySQL.</li>
+                <li>Développement du backend avec Flask pour exposer les données via des points de terminaison API.</li>
+                <li>Création du frontend avec LeafletJS pour afficher la carte interactive et les marqueurs dynamiques représentant chaque station.</li>
+                <li>Intégration des informations sur chaque station : nom, commune, nombre de vélos disponibles et nombre de places disponibles.</li>
+            </ul>
+
+            <p>📄 <a href="https://github.com/NadegeAkoko/Projet_Station_Velo/blob/main/Rapport.pdf" target="_blank">Voir la documentation du projet (PDF)</a></p>
+            <p>💻 <a href="https://github.com/NadegeAkoko/Projet_Station_Velo.git" target="_blank">Accéder au code sur GitHub</a></p>
+        </div>
+
+        <!-- Expérience 2 -->
+        <div class="experience-item">
+            <h3>Analyste Économique - Modélisation VAR des Séries Temporelles</h3>
+            <p><strong>🎯 Objectif du projet: </strong>Modélisation du PIB, taux d’intérêt et inflation à l’aide d’un modèle VAR</p>
+            <p>L’objectif de ce projet était de modéliser les séries temporelles économiques — en particulier le PIB, le taux d’intérêt et l’inflation — à l’aide d’un modèle VAR (Vector Autoregressive).</p>
+            <p>Responsabilités : 
+                <ul>
+                    <li>Vérification de la stationnarité des séries avec les tests de Dickey-Fuller augmentés.</li>
+                    <li>Détermination de l’ordre optimal du modèle VAR (critères AIC/BIC).</li>
+                    <li>Analyse des réponses impulsionnelles et de la décomposition de la variance des erreurs de prévision.</li>
+                    <li>Interprétation des dynamiques économiques à court terme et impact des politiques monétaires.</li>
+                </ul>
+            </p>
+
+            <p>📄 <a href="https://github.com/NadegeAkoko/Projet_VAR_Model_Eco_Analysis/blob/main/Rapport%20Evaluation_Kangni-soukpe.pdf" target="_blank">Voir la documentation du projet (PDF)</a></p>
+            <p>💻 <a href="https://github.com/NadegeAkoko/Projet_VAR_Model_Eco_Analysis.git" target="_blank">Accéder au code sur GitHub</a></p>
+        </div>
+
+        <!-- Expérience 3 -->
+        <div class="experience-item">
+            <h3>Projet : Gestion d’une Bibliothèque – Administration et Analyse d’une base PostgreSQL</h3>
+            <p><strong>🎯 Objectif du projet : </strong> Création et gestion d’une base de données relationnelle pour une bibliothèque</p>
+            <p>Ce projet a pour but de créer et administrer une base de données PostgreSQL représentant une bibliothèque. Il permet de mettre en pratique toutes les compétences fondamentales en gestion de bases de données relationnelles : création de schéma, gestion des rôles, requêtes avancées, transactions, sauvegarde/restauration, et analyse de performance.</p>
+            <ul>
+                <li>Création de schémas et tables pour gérer les livres, les membres et les emprunts.</li>
+                <li>Développement des requêtes pour gérer les opérations de prêt et de retour de livres.</li>
+                <li>Implémentation des mécanismes de sauvegarde et de restauration pour assurer la disponibilité des données.</li>
+                <li>Optimisation des performances avec l’utilisation d’index et de vues matérialisées.</li>
+            </ul>
+
+            <p>📄 <a href="https://github.com/NadegeAkoko/projet-PostgreSQL-/blob/main/Contr%C3%B4le%20Continu%20%E2%80%94%20PostgreSQL%20Nad%C3%A8ge-Kangni-soukpe.pdf" target="_blank">Voir la documentation du projet (PDF)</a></p>
+            <p>💻 <a href="https://github.com/NadegeAkoko/projet-Admin-S-curit-.git" target="_blank">Accéder au code sur GitHub</a></p>
+        </div>
+
+        <!-- Expérience 4 -->
+        <div class="experience-item">
+            <h3>Analyse et Prédiction des Risques de Crédit</h3>
+            <p><strong>🎯 Objectif du projet : </strong> Développement d’un modèle prédictif pour évaluer les risques de crédit des clients bancaires</p>
+            <p>L’objectif de ce projet était de concevoir une base de données pour gérer les informations des prêts bancaires et de développer un modèle prédictif permettant d’évaluer le risque de crédit des clients. Le modèle utilise la régression logistique et le sur-échantillonnage des classes minoritaires pour obtenir des prédictions plus fiables.</p>
+            <ul>
+                <li>Création d’une base de données SQL pour la gestion des prêts et des transactions bancaires.</li>
+                <li>Développement d’un modèle de régression logistique pour prédire le statut des paiements des clients (normal, en défaut, ou remboursé).</li>
+                <li>Optimisation de la base de données avec des index et des jointures SQL pour analyser les comportements des clients.</li>
+                <li>Intégration du score de risque dans une nouvelle table SQL pour exploitation ultérieure.</li>
+            </ul>
+
+            <p>📄 <a href="https://github.com/NadegeAkoko/Projet_Analys_Preidict_Risq_Credit/blob/main/ANALYSE%20DE%20PREDICTION%20DES%20RISQUES%20DE%20CREDIT_Nadege_Kangni-soukpe.pdf" target="_blank">Voir la documentation du projet (PDF)</a></p>
+            <p>💻 <a href="https://github.com/NadegeAkoko/Projet_Analys_Preidict_Risq_Credit.git" target="_blank">Accéder au code sur GitHub</a></p>
+        </div>
+
+        <!-- Expérience 5 -->
+        <div class="experience-item">
+            <h3>Détection de Fraude Bancaire</h3>
+            <p><strong>🎯 Objectif du projet : </strong> Détection des transactions frauduleuses en utilisant SQL et des modèles de machine learning.</p>
+            <p>Le projet consiste à analyser un ensemble de données transactionnelles bancaires pour détecter les transactions frauduleuses à l’aide d’algorithmes de machine learning et SQL. Des techniques avancées telles que l’injection SQL et les algorithmes de classification supervisée ont été utilisées pour créer un modèle performant.</p>
+            <ul>
+                <li>Analyse des données transactionnelles pour identifier les caractéristiques des transactions frauduleuses.</li>
+                <li>Entraînement d’un modèle de machine learning pour détecter les anomalies dans les transactions.</li>
+                <li>Optimisation du modèle avec la validation croisée et le réglage des hyperparamètres.</li>
+                <li>Création d’un tableau de bord interactif pour visualiser les résultats et la performance du modèle.</li>
+            </ul>
+
+            <p>📄 <a href="https://github.com/NadegeAkoko/projet-fraude-bancaire/blob/main/Rapport%20du%20Projet%20SQL%20.pdf" target="_blank">Voir la documentation du projet (PDF)</a></p>
+            <p>💻 <a href="https://github.com/NadegeAkoko/projet-fraude-bancaire.git" target="_blank">Accéder au code sur GitHub</a></p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2025 Mon Portfolio - nado161997@gmail.com</p>
+    </footer>
+</body>
+</html>
